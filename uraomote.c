@@ -13,6 +13,11 @@ int main() {
     // 乱数のシードを設定
     srand(time(NULL));
 
+    printf("Who are you?\n> ");
+    scanf("%99s", user_name);
+    printf("Hello, %s!\n", user_name);
+
+
     printf("Tossing a coin...\n");
     for (int round = 1; round <= 3; ++round) {
         const char* result = coin_toss();
